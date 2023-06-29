@@ -26,6 +26,6 @@ node('master')
 {
     stage('S3-Cont. Deploy')
     {
-        deploy adapters: [tomcat8(credentialsId: '3b8c23a9-21f9-4012-b3a9-f4ae496c4b08', path: '', url: 'http://172.31.35.114:8080/')], contextPath: 'Tomcat-QA-Pipeline_Script-Deploy', war: '**/*.war'
+        deploy adapters: [tomcat8(credentialsId: '3b8c23a9-21f9-4012-b3a9-f4ae496c4b08', path: '', url: 'http://172.31.35.114:8080/')], contextPath: 'Tomcat-QA-MBP-Prvn-War-File', war: '**/*.war'
     }
 }
